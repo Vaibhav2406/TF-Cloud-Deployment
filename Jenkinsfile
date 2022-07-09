@@ -22,7 +22,7 @@ pipeline {
               sh 'terraform init'
             }
 	}
-	stage('Running Terraform Init') {
+	stage('Running Terraform Plan') {
            steps {
              sh 'terraform plan'
 	   }
