@@ -26,5 +26,7 @@ pipeline {
            steps {
              sh 'terraform plan'
             }
-	}   
+      	}   
      }
+  }
+}
