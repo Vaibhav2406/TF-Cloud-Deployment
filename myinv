@@ -1,0 +1,2 @@
+[QA]
+192.168.29.143 ansible_user=slave ansible_ssh_pass=Gupta@
