@@ -25,8 +25,7 @@ pipeline {
 	stage('Installing tools on slave') {
            steps {
              sh 'terraform plan'
-            }
-      	}   
-     }
-  }
-}
+	   }
+	}
+    }
+}	
