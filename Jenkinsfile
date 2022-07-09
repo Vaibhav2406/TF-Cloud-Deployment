@@ -22,7 +22,7 @@ pipeline {
               sh 'terraform init'
             }
 	}
-	stage('Installing tools on slave') {
+	stage('Running Terraform Init') {
            steps {
              sh 'terraform plan'
 	   }
