@@ -17,5 +17,15 @@ pipeline {
               ansiblePlaybook credentialsId: 'Mastercreds', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'myinv', playbook: 'TerraformInstallation/tf.yml'
             }
 	}
+	stage('Running Terraform Init') {
+            steps {
+              sh 'terraform init'
+            }
+	}
+	stage('Installing tools on slave') {
+           steps {
+             sh 'terraform plan'
+            }
+	}   
      }
 }
